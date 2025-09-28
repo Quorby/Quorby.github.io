@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quorby – cosmic oracle ai</title>
+  <title>Quorby – Cosmic Oracle AI</title>
+
+  <!-- SEO & Social Preview -->
+  <meta name="description" content="Quorby – The interstellar meme prophet bringing absurd astrology to crypto.">
+  <meta property="og:title" content="Quorby – Cosmic Oracle AI">
+  <meta property="og:description" content="The cosmic oracle meme coin mixing astrology, absurd humor, and crypto wisdom.">
+  <meta property="og:image" content="Quorby.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quorby – Cosmic Oracle AI">
+  <meta name="twitter:description" content="Join the Quorby cosmic memeverse 🚀✨">
+  <meta name="twitter:image" content="Quorby.png">
+
   <style>
     body {
       margin: 0;
@@ -31,35 +43,33 @@
       color: #00ffff;
     }
 
-.cta-buttons {
-  margin-top: 30px;
-}
-
-.btn {
-  display: inline-block;
-  background: linear-gradient(90deg, #ff00ff, #6f00ff);
-  color: #fff;
-  padding: 14px 32px;
-  font-size: 20px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 0 20px #ff00ff;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: linear-gradient(90deg, #6f00ff, #00ffff);
-  box-shadow: 0 0 30px #00ffff;
-}
-
-.ca {
-  margin-top: 12px;
-  font-size: 14px;
-  color: #00ffff;
-  text-shadow: 0 0 10px #00ffff;
-  font-family: monospace;
-}
+    .cta-buttons {
+      margin-top: 30px;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff00ff, #6f00ff);
+      color: #fff;
+      padding: 14px 32px;
+      font-size: 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 20px #ff00ff;
+      transition: 0.3s;
+      margin: 10px;
+    }
+    .btn:hover {
+      background: linear-gradient(90deg, #6f00ff, #00ffff);
+      box-shadow: 0 0 30px #00ffff;
+    }
+    .ca {
+      margin-top: 12px;
+      font-size: 14px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      font-family: monospace;
+    }
     
     section {
       padding: 60px 20px;
@@ -102,20 +112,28 @@
       color: #00ffff;
       text-shadow: 0 0 10px #00ffff;
     }
+    .social-links {
+      margin-top: 40px;
+    }
+    .social-links a {
+      margin: 0 15px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .social-links a:hover {
+      color: #00ffff;
+    }
     footer {
       margin-top: 60px;
       padding: 20px;
       text-align: center;
       background: rgba(255, 255, 255, 0.05);
     }
-    footer a {
-      margin: 0 15px;
-      color: #ffcc00;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer a:hover {
-      color: #00ffff;
+    footer p {
+      font-size: 14px;
+      color: #aaa;
     }
   </style>
 </head>
@@ -123,14 +141,16 @@
   <!-- Hero Section -->
   <header>
     <img src="Quorby.png" alt="Quorby Logo">
-    <h1>Quorby – Cosmic Oracle Ai</h1>
+    <h1>Quorby – Cosmic Oracle AI</h1>
     <p>The interstellar meme prophet bringing absurd astrology to crypto</p>
     
-     <!-- CTA Buttons -->
-  <div class="cta-buttons">
-    <a href="https://pump.fun/your-token-link" target="_blank" class="btn">🚀 Buy Now</a>
-    <p class="ca">CA: 0x1234abcd5678efgh91011ijkl...</p>
-  </div>
+    <!-- CTA Buttons -->
+    <div class="cta-buttons">
+      <a href="https://pump.fun/YOUR_TOKEN_LINK" target="_blank" class="btn">🚀 Buy Now</a>
+      <a href="https://dexscreener.com/YOUR_CHART_LINK" target="_blank" class="btn">📈 Chart</a>
+      <a href="https://www.dextools.io/app" target="_blank" class="btn">🧩 DexTools</a>
+      <p class="ca">CA: 0x1234abcd5678efgh91011ijkl...</p>
+    </div>
   </header>
 
   <!-- Lore Section -->
@@ -156,17 +176,20 @@
     </div>
   </section>
 
-  <!-- Community -->
+  <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://twitter.com/YOUR_HANDLE" target="_blank">🐦 Twitter</a>
+    <a href="https://t.me/YOUR_TELEGRAM" target="_blank">👾 Telegram</a>
+    <a href="https://discord.gg/YOUR_DISCORD" target="_blank">🎮 Discord</a>
+  </div>
+
+  <!-- Footer -->
   <footer>
-    <h3>🌐 Join the Quorby Cosmic Community</h3>
-    <p>
-      <a href="#">Twitter</a> |
-      <a href="#">Telegram</a> |
-      <a href="#">Discord</a>
-    </p>
-    <p style="font-size:14px; color:#aaa;">© 2025 Quorby – All Rights Reserved</p>
+    <p>⚠️ Not financial advice. Just intergalactic nonsense.<br>
+    © 2025 Quorby – All Rights Reserved</p>
   </footer>
 
+  <!-- Horoscope Script -->
   <script>
   function generateHoroscope() {
     const horoscopes = [
@@ -186,18 +209,18 @@
 
     const random = horoscopes[Math.floor(Math.random() * horoscopes.length)];
     const result = document.getElementById("result");
-    result.innerHTML = ""; // clear previous text
+    result.innerHTML = ""; 
 
     let i = 0;
     function typing() {
       if (i < random.length) {
         result.innerHTML += random.charAt(i);
         i++;
-        setTimeout(typing, 40); // speed (lower = faster)
+        setTimeout(typing, 40);
       }
     }
     typing();
   }
-</script>
+  </script>
 </body>
 </html>
