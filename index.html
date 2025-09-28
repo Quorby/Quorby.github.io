@@ -168,25 +168,36 @@
   </footer>
 
   <script>
-    function generateHoroscope() {
-      const horoscopes = [
-        "♈ Aries → Dompetmu bakal kosong, tapi hatimu tetap penuh meme.",
-        "♉ Taurus → Jangan FOMO, karena Quorby sudah melihat masa depanmu… dan itu absurd.",
-        "♊ Gemini → Kamu akan beli token salah, tapi jangan panik. Itu takdir kosmik.",
-        "♋ Cancer → Jangan terlalu baper, bahkan bintang pun sering salah posisi.",
-        "♌ Leo → Kamu lahir untuk jadi alpha… minimal di grup Telegram.",
-        "♍ Virgo → Analisa chart boleh, tapi jangan lupa makan Indomie.",
-        "♎ Libra → Hidupmu seimbang… kecuali portfolio crypto-mu.",
-        "♏ Scorpio → Waspada! Dompetmu sedang diincar Mercury retrograde.",
-        "♐ Sagitarius → Jalanmu menuju bulan… tapi pakai ojol kosmik.",
-        "♑ Capricorn → Kamu akan jadi whale, tapi di kolam renang Quorby.",
-        "♒ Aquarius → Ide gilamu akan viral di Twitter, siap-siap jadi meme.",
-        "♓ Pisces → Hari ini kamu tersenyum… besok mungkin rugi lagi."
-      ];
-      
-      const random = horoscopes[Math.floor(Math.random() * horoscopes.length)];
-      document.getElementById("result").innerHTML = random;
+  function generateHoroscope() {
+    const horoscopes = [
+      "♈ Aries → Your wallet may be empty, but your heart is full of memes.",
+      "♉ Taurus → Don’t FOMO, Quorby already saw your future… and it’s absurd.",
+      "♊ Gemini → You will buy the wrong token, but don’t panic. It’s cosmic destiny.",
+      "♋ Cancer → Don’t be too sensitive, even the stars are often out of position.",
+      "♌ Leo → You were born to be alpha… at least in the Telegram group.",
+      "♍ Virgo → Chart analysis is fine, but don’t forget to eat instant noodles.",
+      "♎ Libra → Your life is balanced… except for your crypto portfolio.",
+      "♏ Scorpio → Beware! Mercury retrograde is eyeing your wallet.",
+      "♐ Sagittarius → Your path leads to the moon… but only with a cosmic rideshare.",
+      "♑ Capricorn → You will become a whale, but only in Quorby’s swimming pool.",
+      "♒ Aquarius → Your crazy idea will go viral on Twitter, get ready to become a meme.",
+      "♓ Pisces → Today you smile… tomorrow you might lose again."
+    ];
+
+    const random = horoscopes[Math.floor(Math.random() * horoscopes.length)];
+    const result = document.getElementById("result");
+    result.innerHTML = ""; // clear previous text
+
+    let i = 0;
+    function typing() {
+      if (i < random.length) {
+        result.innerHTML += random.charAt(i);
+        i++;
+        setTimeout(typing, 40); // speed (lower = faster)
+      }
     }
-  </script>
+    typing();
+  }
+</script>
 </body>
 </html>
