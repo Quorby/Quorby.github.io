@@ -1,92 +1,138 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@700&display=swap');
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Inter:wght@400;600&display=swap');
 
-/* Global */
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Inter', sans-serif;
-  background: radial-gradient(circle at top, #0d0b33, #000010 80%);
-  color: #e0e7ff;
-  line-height: 1.8;
-  font-size: 1.05rem;
-  text-align: center;
+  background: radial-gradient(circle at top, #1a0033, #000000);
+  color: #fff;
+  overflow-x: hidden;
+  line-height: 1.7;
 }
 
-/* Headings */
-h1, h2, h3 {
+/* Header / Hero */
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header img {
+  width: 180px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px #ff00ff;
+}
+
+header h1 {
   font-family: 'Orbitron', sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 0 0 8px #6366f1, 0 0 16px #38bdf8;
-  margin-bottom: 0.5rem;
+  font-size: 42px;
+  color: #ffcc00;
+  text-shadow: 0 0 15px #ff00ff, 0 0 25px #ffcc00;
+  margin-top: 20px;
 }
 
-/* Section Containers */
-.section {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  border-radius: 20px;
-  background: rgba(20, 10, 40, 0.85);
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.4),
-              0 0 40px rgba(56, 189, 248, 0.2);
+header p {
+  font-size: 20px;
+  color: #00ffff;
+  margin-top: 10px;
+  text-shadow: 0 0 8px #00ffff;
 }
 
-/* Paragraph */
-p {
-  font-size: 1.05rem;
-  color: #e0f2fe;
-  margin-top: 1rem;
-  line-height: 1.8;
-}
-
-/* Hero Section */
-.hero {
-  padding: 4rem 2rem;
-  background: linear-gradient(160deg, #1e1b4b, #0f172a);
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
   text-align: center;
-  border-bottom: 2px solid rgba(99, 102, 241, 0.4);
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+/* Lore Section */
+.lore {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 20px #6f00ff;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  color: #a5f3fc;
+.lore h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffcc00;
+  text-shadow: 0 0 12px #ff00ff;
 }
 
-/* Buttons */
-.btn {
-  display: inline-block;
-  margin-top: 1.5rem;
-  padding: 12px 28px;
-  font-size: 1rem;
-  font-weight: 600;
+/* Horoscope Section */
+.horoscope {
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px #00ffff;
+}
+
+.horoscope h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  text-shadow: 0 0 12px #00ffff;
+}
+
+.horoscope p {
+  font-size: 18px;
+  color: #e0f7ff;
+  margin-bottom: 20px;
+}
+
+/* Button */
+button {
+  background: linear-gradient(90deg, #6f00ff, #ff00ff);
   color: #fff;
-  background: linear-gradient(90deg, #6366f1, #38bdf8);
   border: none;
-  border-radius: 10px;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 12px;
   cursor: pointer;
-  text-decoration: none;
-  box-shadow: 0 0 12px rgba(56,189,248,0.7);
-  transition: all 0.25s ease;
+  font-weight: bold;
+  box-shadow: 0 0 20px #ff00ff;
+  margin-top: 20px;
+  transition: all 0.3s ease;
 }
 
-.btn:hover {
+button:hover {
+  background: linear-gradient(90deg, #ff00ff, #ffcc00);
+  box-shadow: 0 0 30px #ffcc00;
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(56,189,248,1);
+}
+
+/* Horoscope Result */
+#result {
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
 }
 
 /* Footer */
 footer {
-  margin-top: 3rem;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #94a3b8;
-  background: #0f172a;
-  border-top: 1px solid rgba(99, 102, 241, 0.2);
+  margin-top: 60px;
+  padding: 30px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+footer a {
+  margin: 0 15px;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #00ffff;
 }
