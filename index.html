@@ -1,59 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quorby - Cosmic Meme Oracle</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quorby – Cosmic Meme Oracle</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: radial-gradient(circle at top, #1a0033, #000000);
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header img {
+      width: 180px;
+      border-radius: 50%;
+      box-shadow: 0 0 25px #ff00ff;
+    }
+    header h1 {
+      font-size: 48px;
+      color: #ffcc00;
+      text-shadow: 0 0 15px #ff00ff;
+    }
+    header p {
+      font-size: 20px;
+      color: #00ffff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .lore {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 20px #6f00ff;
+    }
+    .horoscope {
+      margin-top: 40px;
+      padding: 40px;
+      border-radius: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 0 20px #00ffff;
+    }
+    button {
+      background: #6f00ff;
+      color: #fff;
+      border: none;
+      padding: 14px 30px;
+      font-size: 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 0 20px #ff00ff;
+      margin-top: 20px;
+    }
+    button:hover {
+      background: #ff00ff;
+      box-shadow: 0 0 30px #ffcc00;
+    }
+    #result {
+      margin-top: 25px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    footer a {
+      margin: 0 15px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      color: #00ffff;
+    }
+  </style>
 </head>
 <body>
+  <!-- Hero Section -->
   <header>
-    <h1>🔮 Quorby - Cosmic Meme Oracle</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#lore">Lore</a>
-      <a href="#oracle">Oracle Zone</a>
-      <a href="#community">Community</a>
-    </nav>
+    <img src="assets/quorby.png" alt="Quorby Logo">
+    <h1>Quorby – Cosmic Meme Oracle</h1>
+    <p>The interstellar meme prophet bringing absurd astrology to crypto</p>
   </header>
 
-  <section class="hero">
-    <h2>Welcome to Quorby</h2>
-    <p>The first Meme + Astrology + Crypto fusion, powered by chaos and cosmic vibes.</p>
-    <button onclick="location.href='#oracle'">Get Your Quorby Prediction</button>
+  <!-- Lore Section -->
+  <section>
+    <div class="lore">
+      <h2>🌌 The Legend of Quorby</h2>
+      <p>
+        Long ago, in a galaxy fueled by memes and stardust, Quorby was born.  
+        A cosmic oracle with a mischievous smile, Quorby blends astrology, absurd humor, and crypto wisdom.  
+        Every prophecy is chaotic yet somehow… makes sense.  
+        Quorby isn’t just a token, it’s a movement of cosmic nonsense destined for the moon 🌙✨
+      </p>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About Quorby</h2>
-    <p>Quorby is not just a token. Quorby is a cosmic entity that predicts your crypto fate through absurd astrology memes. Hold Quorby, join the cult, embrace the chaos.</p>
+  <!-- Horoscope Zone -->
+  <section>
+    <div class="horoscope">
+      <h2>🔮 Quorby Horoscope Zone 🔮</h2>
+      <p>Click below and let Quorby predict your meme destiny!</p>
+      <button onclick="generateHoroscope()">✨ Reveal My Fortune</button>
+      <div id="result"></div>
+    </div>
   </section>
 
-  <section id="lore">
-    <h2>Lore</h2>
-    <p>Born from the fusion of stardust and internet memes, Quorby became the ultimate oracle of the blockchain multiverse. Every transaction echoes a prophecy, every meme is a destiny.</p>
-  </section>
-
-  <section id="oracle">
-    <h2>🔮 Oracle Zone</h2>
-    <p>Click below to receive your absurd cosmic prophecy from Quorby:</p>
-    <button onclick="getPrediction()">Ask Quorby</button>
-    <p id="prediction"></p>
-  </section>
-
-  <section id="community">
-    <h2>Join the Community</h2>
-    <p>Follow the Quorby movement across the galaxy:</p>
-    <ul>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Telegram</a></li>
-      <li><a href="#">Discord</a></li>
-    </ul>
-  </section>
-
+  <!-- Community -->
   <footer>
-    <p>© 2025 Quorby | Powered by Cosmic Chaos</p>
+    <h3>🌐 Join the Quorby Cosmic Community</h3>
+    <p>
+      <a href="#">Twitter</a> |
+      <a href="#">Telegram</a> |
+      <a href="#">Discord</a>
+    </p>
+    <p style="font-size:14px; color:#aaa;">© 2025 Quorby – All Rights Reserved</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function generateHoroscope() {
+      const horoscopes = [
+        "♈ Aries → Dompetmu bakal kosong, tapi hatimu tetap penuh meme.",
+        "♉ Taurus → Jangan FOMO, karena Quorby sudah melihat masa depanmu… dan itu absurd.",
+        "♊ Gemini → Kamu akan beli token salah, tapi jangan panik. Itu takdir kosmik.",
+        "♋ Cancer → Jangan terlalu baper, bahkan bintang pun sering salah posisi.",
+        "♌ Leo → Kamu lahir untuk jadi alpha… minimal di grup Telegram.",
+        "♍ Virgo → Analisa chart boleh, tapi jangan lupa makan Indomie.",
+        "♎ Libra → Hidupmu seimbang… kecuali portfolio crypto-mu.",
+        "♏ Scorpio → Waspada! Dompetmu sedang diincar Mercury retrograde.",
+        "♐ Sagitarius → Jalanmu menuju bulan… tapi pakai ojol kosmik.",
+        "♑ Capricorn → Kamu akan jadi whale, tapi di kolam renang Quorby.",
+        "♒ Aquarius → Ide gilamu akan viral di Twitter, siap-siap jadi meme.",
+        "♓ Pisces → Hari ini kamu tersenyum… besok mungkin rugi lagi."
+      ];
+      
+      const random = horoscopes[Math.floor(Math.random() * horoscopes.length)];
+      document.getElementById("result").innerHTML = random;
+    }
+  </script>
 </body>
 </html>
